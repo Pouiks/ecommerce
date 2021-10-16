@@ -23,6 +23,21 @@ Abstract class User {
 
     visitor != User // (jusqu'a enregistrement)
 }
+
+```
+
+```javascript
+class Order {
+    name String! //(eg: Facture_orderId)
+    orderList = [Product_item!]
+    isCompleted = false
+}
+```
+
+```javascript
+class OrderHistory {
+    history = [Order!]
+}
 ```
 Product_item
 ```javascript
@@ -43,7 +58,7 @@ Abstract class Product_item {
 ```
 Comment
 ```javascript
-Abstract Comment = {
+class Comment = {
     content String!
     notation INT!
 }
@@ -55,17 +70,23 @@ class Category {
     color String
 }
 ```
-
+Color
+```javascript
+class Color {
+    name String!
+    hex String!
+}
+```
 Size
 ```javascript
 class Size {
-    name String
+    name String!
 }
 ```
 ShoppingCart
 ```javascript
-ShoppingCart {
-    productList = []
+class ShoppingCart {
+    productList = [Product_item!]
 }
 ```
 

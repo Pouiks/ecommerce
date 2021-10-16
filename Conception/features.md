@@ -21,6 +21,11 @@
  - Ajouter un commentaire / note
  - Choisir la couleur d'un produit
  - Choisir la taille du produit
+ - Historique des commandes
+ 
+#### _V2_
+
+ - Génération d'un PDF avec l'adresse de livraison, nom de la personne
 
 
 # Uses cases
