@@ -1,14 +1,18 @@
 # ecommerce back end
 
-API pour la gestion back-end d'un site classique e-commerce
+API for the back-end management of a classic e-commerce site
 
-Utilisation de node JS
+Using NodeJS for server side
 
 To initialize the project, download it.
 
 use the following command : 
 
 npm install
+
+Coming soon : 
+
+API methods and path
 
 
 
