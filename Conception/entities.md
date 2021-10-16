@@ -35,16 +35,31 @@ Abstract class Product_item {
     image String   //url cloudinary
     priceHT FLOAT!
     reduction INT
-    color String
+    color = [Color]
+    size = [Size]
     brand String
     supplier String
+}
+```
+Comment
+```javascript
+Abstract Comment = {
+    content String!
+    notation INT!
 }
 ```
 Category
 ```javascript
 class Category {
-    name String
+    name String!
     color String
+}
+```
+
+Size
+```javascript
+class Size {
+    name String
 }
 ```
 ShoppingCart

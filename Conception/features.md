@@ -1,5 +1,29 @@
 # Features 
 
+## fonctionnalités principales
+ - Ajouter un produit au panier
+ - Supprimer un produit du panier
+ - Creation d'un compte
+ - Se connecter 
+ - Hashage du mot de passe
+ - Suppression d'un utilisateur et de ses données
+ - Tri sur les catégories ou le nom d'un produit
+    - elasticSearch ou tri a la main
+ - Ajout de filtre
+ - Vérification du token
+ - Renouvellement d'un token expiré
+ - Suppression d'un panier 
+    - Après paiement validé
+    - Si pas de paiement, à l'expiration du token
+ - Liste des produits associés
+ - Nombre de paiement effectué
+ - Zoom sur la photo de l'article
+ - Ajouter un commentaire / note
+ - Choisir la couleur d'un produit
+ - Choisir la taille du produit
+
+
+# Uses cases
 ### Admin :
 - Creer / modifier / Supprimer une catégorie de produit
 - Creer / modifier / Supprimer un produit
