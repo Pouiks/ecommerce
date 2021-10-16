@@ -22,6 +22,7 @@
  - Choisir la couleur d'un produit
  - Choisir la taille du produit
  - Historique des commandes
+ - Envoyer un mail au client ( /!\ RGPD) // MailShip
  
 #### _V2_
 
