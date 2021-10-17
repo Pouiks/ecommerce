@@ -1,30 +1,17 @@
-const { response } = require('express');
-const db = require('../client')
+const Color = require("../models/color")
+const colorController = {
 
-class Color {
-    constructor(data){
-        for (const prop in data) {
-            this[prop] = data[prop];
-        };
-    };
-
-    static async findAll(){
-        const colors = await db.query(`
-            SELECT * FROM "color";
-        `)
+    findAll: async (request, response) => {
+        const colors = await Color.findAll()
         console.log(colors.rows);
-        return colors.rows
-    }
+        response.status(200).json({
+            colors
+        })
+    },
 
-    static async createNewColor(element){
+    createNewColor: async (request, response ) => {
         try {
-            const newColor = db.query(
-                `INSERT INTO 'color' VALUES($1, $2) RETURNING id;`,
-                [
-                    element.name,
-                    element.hex
-                ]
-            );
+            const newColor = new Color(request.body)
             response.status(200).json({
                 newColor
             });
@@ -35,4 +22,4 @@ class Color {
         
     }
 }
-module.exports = Color
+module.exports = colorController;

@@ -11,7 +11,6 @@ const productController = {
         } catch (error) {
             console.error(error);
         }
-
     }
 }
 
