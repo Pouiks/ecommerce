@@ -11,7 +11,11 @@ const colorController = {
 
     createNewColor: async (request, response ) => {
         try {
-            const newColor = new Color(request.body)
+            const color = new Color(request.body);
+            const newColor = await color.newColor({
+                name: request.body.name,
+                hex : request.body.hex
+            })
             response.status(200).json({
                 newColor
             });
