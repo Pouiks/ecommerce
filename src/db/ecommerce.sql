@@ -93,5 +93,7 @@ CREATE TABLE "comment"(
     "product_id" INT REFERENCES "product_item"(id),
     "user_id" INT REFERENCES "user"(id)
 );
+INSERT INTO "product_item" ("reference", "name") VALUES 
+('REF_001', 'clavier Razer');
 
 COMMIT;
